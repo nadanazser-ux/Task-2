@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تكليف تطبيقات الإنترنت والمنصات الإلكترونية - لغة CSS</title>
+</head>
+<body>
+    <h1>تكليف مادة تطبيقات الإنترنت والمنصات الإلكترونية: لغة CSS</h1>
+
+    <h2>بيانات الطالبة</h2>
+    <ul>
+        <li><strong>اسم الطالبة:</strong> ندا ناصر فاروق صابر عبيد</li>
+        <li><strong>الرقم الجامعي:</strong> 2502246</li>
+        <li><strong>الفرقة:</strong> الثانية</li>
+        <li><strong>اسم الدكتورة:</strong> دكتورة مها زغلول</li>
+        <li><strong>المادة:</strong> تطبيقات الإنترنت والمنصات الإلكترونية</li>
+    </ul>
+
+    <hr>
+
+    <h2>1. المقدمة</h2>
+    <p>تعد لغة <strong>CSS</strong> (اختصارًا لـ <b>Cascading Style Sheets</b> أي أوراق الأنماط المتتالية)، وهي اللغة المسؤولة عن تنسيق صفحات الويب وتحسين شكلها الخارجي. فبينما تهتم لغة HTML ببناء محتوى الصفحة مثل العناوين والفقرات والصور، تتولى CSS تحديد الألوان والخطوط والمسافات ومكان العناصر على الشاشة. تكمن أهمية CSS في أنها تجعل الموقع أكثر جاذبية وسهولة في الاستخدام، وتساعد المستخدم على قراءة المحتوى والتنقل بين الصفحات بوضوح. كما يمكنها تنسيق عدة صفحات في الموقع من ملف واحد، مما يوفر وقت المطور ويجعل تعديل التصميم أسهل.</p>
+
+    <h2>2. ما هي لغة CSS؟</h2>
+    <p>ليست لغة برمجة بالمعنى التقليدي، بل هي لغة تنسيق تستخدم لتحديد طريقة ظهور عناصر HTML مثل النصوص والصور والأزرار والجداول. تعمل CSS عن طريق اختيار العنصر المطلوب تنسيقه، ثم تحديد الخصائص المطلوبة مثل اللون أو حجم الخط أو المسافة حوله.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="شعار لغة CSS التوضيحي" width="150">
+
+    <h2>3. الأجزاء الأساسية لقاعدة CSS</h2>
+    <p>تتكون قاعدة CSS الأساسية من ثلاثة أجزاء رئيسية، يوضحها الجدول التالي:</p>
+    <table border="1">
+        <tr>
+            <th>الجزء</th>
+            <th>الوظيفة</th>
+            <th>مثال</th>
+        </tr>
+        <tr>
+            <td>المحدد (Selector)</td>
+            <td>يحدد العنصر الذي سيتم تنسيقه.</td>
+            <td>h1 أو p</td>
+        </tr>
+        <tr>
+            <td>الخاصية (Property)</td>
+            <td>توضح نوع التنسيق المطلوب تغييره.</td>
+            <td>color</td>
+        </tr>
+        <tr>
+            <td>القيمة (Value)</td>
+            <td>تحدد قيمة الخاصية.</td>
+            <td>blue أو 28px</td>
+        </tr>
+    </table>
+    
+    <h3>مثال توضيحي لقاعدة CSS:</h3>
+    <pre><code>
+h1 {
+    color: blue;
+    font-size: 28px;
+}
+p {
+    color: gray;
+    line-height: 1.6;
+}
+    </code></pre>
+
+    <h2>4. دور CSS في تحسين شكل صفحات الويب</h2>
+    <ul>
+        <li><strong>الألوان:</strong> يمكن تغيير لون الخلفية والنصوص والأزرار لجعل الموقع متناسقاً ومريحاً للعين.</li>
+        <li><strong>الخطوط:</strong> تتحكم CSS في نوع الخط وحجمه وسماكته، مما يحسن وضوح المحتوى.</li>
+        <li><strong>المسافات:</strong> تنظم المسافات بين النصوص والصور والأقسام باستخدام خصائص مثل margin و padding.</li>
+        <li><strong>الحدود والظلال:</strong> تضيف إطارات أو ظلال خفيفة حول العناصر لتمييزها بصرياً.</li>
+        <li><strong>التنسيق المتجاوب:</strong> يجعل الموقع يظهر بشكل مناسب على الهاتف والتابلت والكمبيوتر عبر شاشات مختلفة.</li>
+    </ul>
+
+    <h2>5. نموذج الصندوق (Box Model)</h2>
+    <p>يعتمد تصميم صفحات الويب على مفهوم مهم يسمى نموذج الصندوق (Box Model)، حيث يتعامل المتصفح مع كل عنصر في الصفحة كأنه صندوق. ويتكون هذا الصندوق من:</p>
+    <ul>
+        <li><b>المحتوى (Content):</b> النص أو الصورة داخل العنصر.</li>
+        <li><b>الحشوة (Padding):</b> المسافة بين المحتوى وحدود العنصر.</li>
+        <li><b>الحدود (Border):</b> الإطار المحيط بالعنصر.</li>
+        <li><b>الهامش (Margin):</b> المسافة بين العنصر والعناصر الأخرى حوله.</li>
+    </ul>
+
+    <h2>6. طرق استخدام CSS الثلاث</h2>
+    <p>هناك ثلاث طرق شائعة لاستخدام CSS في صفحات الويب:</p>
+    <ul>
+        <li><strong>التنسيق داخل العنصر (Inline CSS):</strong> يكتب داخل وسم HTML نفسه، ويستخدم غالباً لتنسيق عنصر واحد.</li>
+        <li><strong>التنسيق الداخلي للصفحة (Internal CSS):</strong> يكتب داخل وسم style في رأس الصفحة.</li>
+        <li><strong>ملف خارجي (External CSS):</strong> يكتب في ملف منفصل ويتم ربطه بصفحة الويب.</li>
+    </ul>
+
+    <h2>7. مثال عملي</h2>
+    <p>لنفترض أن لدينا صفحة HTML تحتوي على عنوان وفقرة:</p>
+    <pre><code>
+&lt;h1&gt;مرحباً بكم في موقعي&lt;/h1&gt;
+&lt;p&gt;هذه صفحة ويب بسيطة تم تنسيقها باستخدام CSS.&lt;/p&gt;
+    </code></pre>
+    <p>يمكن تحسين شكلها باستخدام كود CSS التالي:</p>
+    <pre><code>
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #1a73e8;
+    text-align: center;
+}
+p {
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+}
+    </code></pre>
+<img src="C:\Users\USER\Downloads\WhatsApp Image 2026-11-06 at 1.06.13 AM.jpeg"
+         width="300">
+    <h2>8. الخاتمة</h2>
+    <p>تلعب لغة CSS دوراً أساسياً في تحويل صفحات الويب من محتوى نصي بسيط إلى واجهات جذابة ومنظمة وسهلة الاستخدام. فهي تتحكم في الألوان والخطوط والمسافات وتوزيع العناصر، كما تساعد في جعل المواقع متوافقة مع مختلف الأجهزة. ولذلك تعد CSS من المهارات الأساسية لأي شخص يرغب في تعلم تصميم وتطوير الويب.</p>
+
+    <h2>9. المراجع الأصلية</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started">MDN Web Docs - CSS: Styling the content</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax">MDN Web Docs - Introduction to CSS syntax</a></li>
+        <li><a href="https://web.dev/learn/css/">web.dev - Learn CSS</a></li>
+        <li><a href="https://web.dev/learn/css/welcome">web.dev - Welcome to Learn CSS!</a></li>
+        <li><a href="https://www.w3schools.com/css/css_intro.asp">W3Schools - CSS Introduction</a></li>
+    </ul>
+</body>
+</html>
